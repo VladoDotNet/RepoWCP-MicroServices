@@ -1,9 +1,9 @@
 # RepoWCP-MicroServices
-Practicando con Web Services (WCF).
 
 CURSOS AQUÍ:
 https://vladodotnet.kpages.online/seriesdesdecero
 
+Practicando con Web Services (WCF).
 
 PROYECTO TIPO ASP.NET Web Application.
 .Net 6.0 o superior.
