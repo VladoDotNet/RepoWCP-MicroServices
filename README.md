@@ -2,7 +2,8 @@
 Practicando con Web Services (WCF).
 
 PROYECTO TIPO ASP.NET Web Application.
-.Net 6.0 o superior
+.Net 6.0 o superior.
+
 Debe instalar en Visual Studio 2022 o superior: 
 
     - Desarrollo de ASP.NET y web , especialmente Windows Comunication Fundation (WCF)
