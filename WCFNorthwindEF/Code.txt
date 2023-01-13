@@ -1,0 +1,70 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.ServiceModel.Channels;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using WCFNorthwindEF.CustomerGetServiceRef;
+
+namespace WCFNorthwindEF
+{
+   public partial class frmCustomerService : System.Web.UI.Page
+   {
+      private CustomerServiceClient oService =
+           new CustomerServiceClient();
+      protected void Page_Load (object sender, EventArgs e)
+      {
+         MultiView1.ActiveViewIndex = 0;
+         MultiView1.ActiveViewIndex = 1;
+         MultiView1.ActiveViewIndex = 2;
+
+
+         if (!Page.IsPostBack)
+         {
+
+            this.GridCustomer.DataSource =
+               oService.GetAll().Select(c =>
+                new 
+                { 
+                   ID = c.CustomerID,
+                   CompanyName = c.CompanyName,
+                   Country= c.Country
+                }
+                ).ToList();
+
+            this.GridCustomer.DataBind();
+            lblRegs.Text= "Records retrieved : "+ GridCustomer.Rows.Count.ToString() + " records.";
+         }
+      }
+      protected void btnSearch_Click1 (object sender, EventArgs e)
+      {
+            try
+            {
+               Customer c = this.oService.Get(txtSearching.Text);
+               if ( c != null )
+               {
+                  lblRecords.Text = "Records retrieved:";
+                  lblCustomer.Text = "Company name: " + c.CompanyName;
+                  lblCountry.Text = "Country: " + c.Country;
+                  
+               }
+            }
+            catch ( Exception ex )
+            {
+               ex.Source = "Error";
+            }
+         }
+
+      protected void txtSearching_TextChanged (object sender, EventArgs e)
+      {
+         if (txtSearching.Text=="")
+         {
+            //lblRecords.Visible = false;
+            //lblCustomer.Visible = false;
+            //lblCountry.Visible = false;
+         }
+      }
+   }
+}

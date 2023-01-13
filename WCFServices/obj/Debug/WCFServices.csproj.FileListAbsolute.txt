@@ -1,0 +1,12 @@
+C:\RepoMatrix\WCFServices\bin\WCFServices.dll.config
+C:\RepoMatrix\WCFServices\bin\WCFServices.dll
+C:\RepoMatrix\WCFServices\bin\WCFServices.pdb
+C:\RepoMatrix\WCFServices\bin\EntityFramework.dll
+C:\RepoMatrix\WCFServices\bin\EntityFramework.SqlServer.dll
+C:\RepoMatrix\WCFServices\bin\EntityFramework.xml
+C:\RepoMatrix\WCFServices\bin\EntityFramework.SqlServer.xml
+C:\RepoMatrix\WCFServices\obj\Debug\WCFServices.csproj.AssemblyReference.cache
+C:\RepoMatrix\WCFServices\obj\Debug\WCFServices.csproj.CoreCompileInputs.cache
+C:\RepoMatrix\WCFServices\obj\Debug\WCFServices.csproj.CopyComplete
+C:\RepoMatrix\WCFServices\obj\Debug\WCFServices.dll
+C:\RepoMatrix\WCFServices\obj\Debug\WCFServices.pdb
