@@ -27,3 +27,11 @@ Proyecto > Cliente: WCFNorthwindEF.aspx, con
 		
 		- Paginación
 		
+DESCARGAR Y EJECUTAR:
+1. Descargue el contenido de este repositorio (ideal comprimido)
+2. Crear un folder ejemplo: RepoWCP-MicroServices
+3. Descomprimir y ejecutar el archivo de la solución > 
+   WCFNorthwindEF > WCFNorthwindEF.sln
+   
+   
+		
